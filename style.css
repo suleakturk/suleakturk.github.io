@@ -1,5 +1,11 @@
 .general_features{
-    background-color: aliceblue;
+    background-color: rgb(227, 242, 254);
+    display: flex;
+    justify-content: center;
+}
+
+.general_body{
+    display: block;
 }
 
 .header{
@@ -7,22 +13,23 @@
     margin-top: 10px;
 }
 
-table,tr,td{
-    border: 1px solid;
-    overflow-wrap: break-word;
+.profil_img{
+    width: 200px;
+    border-radius: 200px;
 }
 
-.center{
-    margin-left: auto;
-    margin-right: auto;
+.social_medias{
+    display: flex;
+    justify-content: space-around;
 }
 
 .title{
-    font-size: 60px;
+    font-size: 50px;
     margin-left: 15px;
     display: flex;
     align-items: center;
 }
 
-.profil_photo{
+h1{
+    font-size: 25px;
 }
