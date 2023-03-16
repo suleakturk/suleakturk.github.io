@@ -1,5 +1,5 @@
 .general_features{
-    background-color: rgb(227, 242, 254);
+    background-color: rgb(254, 158, 134);
     display: flex;
     justify-content: center;
 }
@@ -8,9 +8,15 @@
     display: block;
 }
 
-.header{
+.top_body{
     display: flex;
     margin-top: 10px;
+}
+
+.header{
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
 }
 
 .profil_img{
@@ -33,3 +39,37 @@
 h1{
     font-size: 25px;
 }
+
+ul{
+    display: flex;
+    list-style: none;
+}
+
+#navbar{
+    padding-left: 70px;
+    color: rgb(250, 242, 242);
+}
+
+.bg-img 
+{
+    background-image: url("sky_image.jpg");
+    min-height: 380px;
+    min-width: 1200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .container {
+    position: absolute;
+    margin-top: 10px;
+    /* width: auto; */
+  }
+  
+  .footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(249, 137, 106);
+    padding: 50px;
+  }
