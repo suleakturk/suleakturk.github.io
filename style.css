@@ -54,10 +54,10 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("pexels-junior-teixeira-2047905.jpg");
+    background-image: url("images/background_image.jpg");
     background-size: contain;
     background-position: center;
-    opacity: 0.98; 
+    opacity: 0.9; 
 }
   
 .main_description {
@@ -133,33 +133,37 @@ hr {
     font-weight: bold;
   }
   
-  .title {
+.title {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 5px;
-  }
-  
-  .company {
+}
+
+.company {
     font-size: 18px;
     font-weight: bold;
     color: #999;
     margin-bottom: 10px;
-  }
+}
 
-  h1{
+h1{
     font-size: 32px;
-  }
+}
 
-  .footer{
+#deneyimlerim h1{
+    margin-top: 400px;
+}
+
+.footer{
     display: block;
     padding: 50px;
     background-color: rgb(32, 28, 28);
-  }
+}
 
-  .social_medias{
+.social_medias{
     display: flex;
     justify-content: space-around;
-  }
+}
 
 .social_medias a img:hover{
     background-color: white;
@@ -169,9 +173,9 @@ hr {
     width: 36px;
 }       
 
-  .text{
+.text{
     color:  #999;
     display: flex;
     justify-content: center;
     font-size: 15px;
-  }
+}
