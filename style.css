@@ -179,3 +179,19 @@ h1{
     justify-content: center;
     font-size: 15px;
 }
+
+.mainContact{
+    background-color: rgb(139, 159, 228);
+}
+
+.headerContact{
+	background-color: rgb(160, 181, 254);
+}
+
+.bgColor{
+	background-color: rgb(139, 159, 228);
+}
+
+.fontAvanir {
+	font-family: 'Avanir', sans-serif;
+}
