@@ -11,6 +11,7 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+    <script src="script.js"></script>
     <title>Iletişim</title>
   </head>
   <body>
@@ -86,7 +87,11 @@
                   ></textarea>
                 </div>
                 <div class="d-grid gap-2">
-                  <button type="submit" class="btn btn-danger btn-block mt-4">
+                  <button
+                    type="submit"
+                    class="btn btn-danger btn-block mt-4"
+                    onclick="showMessage()"
+                  >
                     Send
                   </button>
                 </div>
