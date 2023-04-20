@@ -195,3 +195,18 @@ h1{
 .fontAvanir {
 	font-family: 'Avanir', sans-serif;
 }
+
+#game-area {
+    position: relative;
+    width: 70%;
+    height: 500px;
+    border: 1px solid black;
+    margin-left: 15%;
+    margin-bottom: 10%;
+}
+  
+.fruit {
+    position: absolute;
+    width: 20%;
+}
+  

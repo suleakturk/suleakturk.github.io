@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.5" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Meyve Toplama Oyunu</title>
+  </head>
+  <body>
+    <header class="headerContact">
+      <div class="logo">
+        <img src="images/logo.PNG" alt="logo" width="150" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html#hakkimda">Hakkımda</a></li>
+          <li><a href="index.html#yeteneklerim">Yeteneklerim</a></li>
+          <li><a href="index.html#deneyimlerim">Deneyimlerim</a></li>
+          <li>
+            <a href="contact.html">İletişim-BS</a>
+          </li>
+          <li>
+            <a href="game.html">Oyun</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <h1
+      style="display: flex; justify-content: center; color: rgb(139, 159, 228)"
+    >
+      Meyve Toplama Oyunu
+    </h1>
+    <p style="margin-left: 15%; color: rgb(139, 159, 228)">
+      20 adet meyve toplayın ve oyunu kazanın !!!
+    </p>
+    <p style="margin-left: 15%; color: rgb(139, 159, 228)">
+      Toplanan meyve adedi: <span id="score">0</span>
+    </p>
+    <div id="game-area"></div>
+    <script>
+      var score = 0;
+      var gameArea = document.getElementById("game-area");
+
+      function createFruit() {
+        var fruit = document.createElement("img");
+        var fruits = ["ananas.jpg", "cilek.jpg"];
+        var randomFruit = fruits[Math.floor(Math.random() * fruits.length)];
+        fruit.src = "/images/fruits/" + randomFruit;
+        fruit.classList.add("fruit");
+        fruit.style.left = Math.random() * 90 + "%";
+        fruit.style.top = Math.random() * 90 + "%";
+        gameArea.appendChild(fruit);
+      }
+
+      function removeFruit(event) {
+        if (event.target.classList.contains("fruit")) {
+          event.target.remove();
+          score++;
+          document.getElementById("score").innerHTML = score;
+          if (score === 20) {
+            alert("Vee Kazandınız!!!");
+            return;
+          }
+          createFruit();
+        }
+      }
+
+      createFruit();
+      gameArea.addEventListener("click", removeFruit);
+    </script>
+  </body>
+</html>
